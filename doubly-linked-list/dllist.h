@@ -1,13 +1,7 @@
 #pragma once
+#define PLACEHOLDER "%d "
 
-#define TYPE int
-#define PLACE_HOLDER "%d "
-
-typedef enum
-{
-    OK,
-    ERROR
-} STATUS;
+typedef int TYPE;
 
 typedef struct _node
 {

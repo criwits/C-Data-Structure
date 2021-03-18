@@ -21,12 +21,12 @@ void dllist_print(NODE *node)
     if (node->prevNode != NULL) {
         dllist_print(node->prevNode);
     }
-    printf(PLACE_HOLDER, node->number);
+    printf(PLACEHOLDER, node->number);
 }
 
 NODE *dllist_get_next_node(NODE *node, int remaining)
 {
-    if (remaining == 0) {
+    if (!remaining) {
         return node;
     }
     return dllist_get_next_node(node->nextNode, remaining - 1);
